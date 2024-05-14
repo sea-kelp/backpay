@@ -82,10 +82,9 @@
     <script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js" crossorigin="anonymous"></script>
 
     <script>
-        const url = window.location.href.includes("index.html") ? "data.json" : window.location.href + "/data.json";
         const table = new DataTable("#data-table", {
             ajax: {
-                url: url,
+                url: "data.json",
                 dataSrc: "",
             },
             columns: [
